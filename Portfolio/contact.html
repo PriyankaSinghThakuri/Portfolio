@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+< lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="scrollToTop-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <header class="sticky" I>
+        <a href="#" class="brand">Portfolio</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="index.html">Home.</a>
+            <a href="cv.html">CV.</a>
+            <a href="blog.html">Blog.</a>
+            <a href="research.html">Reasearch.</a>
+            <a href="#">Contact.</a>
+        </div>
+    </header>
+    <section class="contact" id="contact">
+        <div class="title reveal">
+            <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Address</h3>
+                        <span>Kathmandu,Nepal</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Phone</h3>
+                        <span>+977 9826597094</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Email Address</h3>
+                        <span>priyankasinghthakuri57
+                            @email.com</span>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="contact-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="info">
+                        <h3>twitter</h3>
+                        <span>https://twitter.com/Priyank
+                            37044768</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form name="contact_form" onsubmit="validate()">
+                  <table>
+                    <tr>
+                      <td style="font-family:cursive;">First_Name</td>
+                      <td><input type="text" name="fname" placeholder="Enter your firstname"></td><br>
+                    </tr>
+                    <tr>
+                      <td style="font-family:cursive;">Last_Name</td>
+                      <td><input type="text" name="Lname" placeholder="Enter your Lastname"></td><br>
+                    </tr>
+                    <tr>
+                      <td style="font-family:cursive;">Telephone</td>
+                      <td><input type="text" name="number" placeholder="Enter your phone number"></td><br>
+                    </tr>
+                    <tr>
+                      <td style="font-family:cursive;">Email_Address</td>
+                      <td><input type="text" name="emailaddress" placeholder="name@domain.com"></td><br>
+                    </tr>
+                    <tr>
+                      <td style="font-family:cursive;">Your_message</td>
+                      <td><textarea id="message" name="message"  cols="50" rows="5" placeholder="Write something..."></textarea>
+                      </td><br>
+                    </tr>
+                 
+                  </table>
+            
+                  <input type="submit" value="submit" style="font-family:cursive;">
+                 </form>    
+              </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Copyright @2021 <a href="#">Priyanka Singh Thakuri</a>. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+            function Validate(){
+              var fname = document.forms["Contact_form"]["First_Name"].value;
+              var Lname = document.forms["Contact_form"]["Last_Name"].value;
+              var emailaddress = document.forms["Contact_form"]["Email_Address"].value;
+              if(fname == "" || Lname == "" || emailaddress == "")
+              {
+                alert("Please fill up the empty spaces")
+              }
+              else
+              {
+                alert("Thanks you. Have a Great Day!")
+              }
+             }
+
+    </script>
+    </body>
+</html>
+          
